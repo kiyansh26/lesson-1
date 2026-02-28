@@ -1,7 +1,8 @@
 #heading1 {
     color:blue;
 }
-.paragraph {
-    color:azure;
+.para {
+    color:rgb(225, 9, 42);
     font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
