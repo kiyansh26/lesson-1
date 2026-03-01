@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Advance selector</title>
+    </head>
+    <body>
+
+
+        <style>
+            input[type="text"]{
+                border: 10px solid green;
+            }
+            div > h1, p{
+            color: red;
+           }
+           h1 +p {
+            color: darkblue;
+           }
+           ul{
+            list-style: none;
+           }
+           li::before{
+            content: "🥶🥶";
+           }
+           .hi::first-letter{
+            font-size: 100;
+           }
+            
+
+        </style>
+
+
+
+        <p>Hello this is kiyansh</p>
+        <input type="text" placeholder="Type in your name please">
+        <div>
+            <h1>THIS IS A H1 TAG</h1>
+            <p>This is a p tag</p>
+        </div>
+        <h1>
+            THIS IS ANOTHER HI TAG
+        </h1>
+        <p>WITH A P TAG in dark blue</p>
+        <ul>
+            <li>Apple </li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+        <p class="hi">HELLOOOOOOOOOOOOOOOO</p>
+
+
+    </body>
+
+
+</html>
