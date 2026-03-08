@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Positioning</title>
+        <style>
+            .Box{
+                position: static;
+                background-color: blue;
+                width: 200px;
+                height: 150px;
+                text-align: center;
+            }
+            .Boxx{
+                position: relative;
+                background-color: red;
+                top: 20px;
+                right: 20px;
+                left: 2px;
+                height: 20px;
+            }
+            .parent{
+                top: 100px;
+                position: relative;
+                background-color: lightgray;
+                width: 200px;
+                height: 200px;
+            }
+            .child{
+                position: absolute;
+                background-color: black;
+                width: 100px;
+                height: 100px;
+                top: 30px;
+                right: 10px;
+            }
+            .fixed{
+                position: fixed;
+                background-color: blueviolet;
+                right: 20px;
+                width:200px;
+                height: 100px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="Box">Static box</div>
+        <div class="Boxx">Relative box</div>
+        <div class="parent">Parent
+            <div class="child"Child box></div>
+        </div>
+        <div class="fixed">Fixed</div>
+
+        <div></div>
+    </body>
+</html>
