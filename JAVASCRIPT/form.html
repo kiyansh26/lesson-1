@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>FORM</title>
+        <style>
+            .error{
+                color: red;
+            }
+            .Success{
+                color: green
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Register Form</h2>
+        <input type="text" id="user" placeholder="Enter name">
+        <p id = "message"></p>
+
+        <script>
+            document.getElementById("user").addEventListener("input", validate)
+            function validate(){
+                let input = document.getElementById("user").value
+                let message = document.getElementById("message")
+
+                if (input.length < 5){
+                    message.innerHTML = "Name must be 6 characters long"
+                    message.className = "error";
+                }else{
+                    message.innerHTML = "Valid username"
+                    message.className = "Success"
+                }
+
+            }
+        </script>
+    </body>
+</html>
