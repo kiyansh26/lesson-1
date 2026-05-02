@@ -22,7 +22,7 @@
                 let input = document.getElementById("user").value
                 let message = document.getElementById("message")
 
-                if (input.length < 5){
+                if (input.length <= 5){
                     message.innerHTML = "Name must be 6 characters long"
                     message.className = "error";
                 }else{
