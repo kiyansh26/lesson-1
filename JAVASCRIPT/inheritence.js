@@ -32,5 +32,5 @@ class Dog extends Human {
     }
 }
 
-let d1 = new Dog("Tommy", "Labrador");
-d1.show();
+//let d1 = new Dog("Tommy", "Labrador");
+//d1.show();

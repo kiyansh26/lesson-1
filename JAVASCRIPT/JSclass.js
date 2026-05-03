@@ -17,3 +17,4 @@ class student {
 let s1 = new student("Peter",14)
 console.log(s1.name)
 console.log(s1.age)
+
