@@ -31,6 +31,3 @@ class Dog extends Human {
         console.log("Breed: " + this.breed);
     }
 }
-
-//let d1 = new Dog("Tommy", "Labrador");
-//d1.show();
