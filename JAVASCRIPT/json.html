@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+
+    </style>
+
+    <title>Jason example</title>
+</head>
+
+<body>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="output"></div>
+        <button onclick="showcart()">Show Cart</button>
+    </div>
+
+    <script>
+        function showcart() {
+
+            let cart = {
+                item1: {
+                    name: "Shoes",
+                    price: 2000
+                },
+
+                item2: {
+                    name: "watch",
+                    price: 1500
+                }
+            };
+
+            let cartJSON = JSON.stringify(cart)
+            let cartObject = JSON.parse(cartJSON)
+
+            let total = cartObject.item1.price + cartObject.item2.price
+
+            document.getElementById("output").innerHTML = `
+            <p>${cartObject.item1.name} - Rupees ${cartObject.item1.price}
+            <p>${cartObject.item2.name} - Rupees ${cartObject.item2.price}
+            <h3>Total : ${total}</h3>`
+        }
+    </script>
+
+</body>
+</html>
