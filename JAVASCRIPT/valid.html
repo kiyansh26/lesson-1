@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <br><br>
+
+    <input type="text" id="email" placeholder="Enter email">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <br><br>
+
+    <input type="number" id="number" placeholder="Enter number">
+    <br><br>
+
+    <button onclick="validateform()">Sign up</button>
+
+    <p id="message"></p>
+
+    <script>
+        function validateform() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let number = document.getElementById("number").value;
+            let msg = document.getElementById("message");
+
+            if (name == "" || email == "" || password == "" || number == "") {
+                msg.innerHTML = "All fields are required";
+            }
+
+            else if (!email.includes("@")) {
+                msg.innerHTML = "Invalid email";
+            }
+
+            else if (password.length < 8) {
+                msg.innerHTML = "Password needs 8 characters";
+            }
+
+            else {
+                msg.innerHTML = "Signup Successful";
+            }
+        }
+    </script>
+
+</body>
+</html>

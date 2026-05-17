@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Movie Ticket Booking</title>
+  </head>
+
+  <body>
+    <form id="bookingform">
+      <input type="text" id="username" placeholder="Enter name" required />
+      <br><br>
+      <input type="text" id="email" placeholder="Enter email" requred />
+      <br><br>
+
+      <input type="password" id="tickets" placeholder="Enter no of tickets" required />
+      <br><br>
+
+      <input type="number" id="number" placeholder="Enter number" required />
+      <br><br>
+
+      <button type="button" onclick="confirmbooking()">Book Tickets</button>
+      <p id="output"></p>
+
+      <script>
+        function confirmbooking() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let tickets = document.getElementById("tickets").value;
+            let msg = document.getElementById("message");
+
+            if(username.checkvalidity() && email.checkvalidity() && tickets.checkvalidity()){
+                output.innerHTML= "booking Successful"
+                output.className = "Success"
+            }
+            else{
+                output.innerHTML = username.validationMessage || email.validationMessage || tickets.validationMessage
+                output.className = "error"
+            }
+        }
+      </script>
+    </form>
+  </body>
+</html>

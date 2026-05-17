@@ -13,4 +13,4 @@ function greet (name , callback){
 function goodbye (){
     console.log("goodbye")
 }
-greet("Kiyansh", goodbye)
+greet("Kiyansh", goodbye)s
